@@ -166,13 +166,16 @@ a:active {
 .trusted-seller {
     margin-top: 150px;
     display: flex;
-    justify-content: space-between;
+    gap: 100px;
+    align-items: center;
+    margin-bottom: 200px;
 }
 
 .trusted-seller ul {
     display: flex;
     flex-direction: column;
-    gap: 20px
+    gap: 10px;
+
 }
 
 .badge {
@@ -188,5 +191,24 @@ a:active {
     width: 200px;
     position: absolute;
     top: -90px;
-    right: -6px;
+    right: -70px;
+}
+
+.trusted-seller-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.trusted-seller-text h1 {
+    font-family: 'Noto Serif', serif;
+    font-size: 50px;
+
+}
+
+.trusted-seller-text ul {
+    margin-left: 34px;
+    font-size: 22px;
+    font-weight: 200;
+    gap: 20px;
 }
