@@ -16,6 +16,7 @@
 }
 
 * {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
@@ -168,7 +169,7 @@ a:active {
     display: flex;
     gap: 100px;
     align-items: center;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
 .trusted-seller ul {
@@ -211,4 +212,111 @@ a:active {
     font-size: 22px;
     font-weight: 200;
     gap: 20px;
+}
+
+.latest-deals-text h1 {
+    font-family: 'Noto Serif', serif;
+    font-size: 50px;
+
+}
+
+
+.latest-deals-text h1 span {
+    color: #E95A08;
+}
+
+.latest-deals-text p {
+    width: 850px;
+    font-size: 22px;
+    font-weight: 200;
+
+}
+
+.latest-deals-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.image-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.left-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right-column {
+    flex: 2;
+}
+
+.card {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.text-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+    text-align: center;
+}
+
+.text-content #bloom,
+#ana {
+    margin: 0 0 10px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Noto Serif', serif;
+}
+
+.text-content h2 {
+    margin: 0 0 10px;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Noto Serif', serif;
+}
+
+.text-content a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+    font-size: 16px;
+}
+
+
+.small-card {
+    height: 200px;
+}
+
+.large-card {
+    height: 420px;
 }
