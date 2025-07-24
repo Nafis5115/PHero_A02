@@ -471,8 +471,13 @@ a:active {
     .hero .hero-image {
 
         order: 1;
+        width: auto;
+        position: relative;
     }
 
+    .hero .hero-image img {
+        width: 100%;
+    }
 
     .hero .hero-text {
 
@@ -495,7 +500,7 @@ a:active {
     }
 
     .our-plants-text p {
-        width: 420px;
+        width: auto;
         font-size: 14px;
     }
 
@@ -533,7 +538,7 @@ a:active {
     }
 
     .latest-deals-text p {
-        width: 420px;
+        width: auto;
         font-size: 14px;
     }
 
@@ -556,11 +561,19 @@ a:active {
         font-family: 'Noto Serif', serif;
     }
 
+
+    .subscription-form {
+        width: auto;
+        position: relative;
+
+    }
+
     .subscription-form img {
-        width: 100%;
+        width: auto;
         height: 400px;
         object-fit: cover;
         display: block;
+
     }
 
     .form-content h1 {
@@ -571,7 +584,7 @@ a:active {
     .subscribe-container {
         display: flex;
         width: 100%;
-        min-width: 400px;
+        min-width: 200px;
         margin: 20px auto;
         overflow: hidden;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
