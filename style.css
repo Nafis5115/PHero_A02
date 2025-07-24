@@ -78,6 +78,18 @@ a:active {
     font-family: 'Noto Serif', serif;
     font-size: 65px;
 
+
+}
+
+.hero .hero-image {
+
+    order: 2;
+}
+
+
+.hero .hero-text {
+
+    order: 1;
 }
 
 
@@ -103,12 +115,12 @@ a:active {
 .our-plants-text h1 {
     font-family: 'Noto Serif', serif;
     font-size: 50px;
-
+    color: #E95A08;
 }
 
 
 .our-plants-text h1 span {
-    color: #E95A08;
+    color: black;
 }
 
 .our-plants-text p {
@@ -228,12 +240,14 @@ a:active {
 .latest-deals-text h1 {
     font-family: 'Noto Serif', serif;
     font-size: 50px;
-
+    color: #E95A08;
 }
 
 
+
+
 .latest-deals-text h1 span {
-    color: #E95A08;
+    color: black;
 }
 
 .latest-deals-text p {
@@ -432,4 +446,152 @@ a:active {
 .social-links img {
     width: 32px;
     height: 32px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .navbar .menu-items ul {
+        display: none;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero .hero-image {
+
+        order: 1;
+    }
+
+
+    .hero .hero-text {
+
+        order: 2;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+        width: 200px;
+    }
+
+    .hero p {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .our-plants-text h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .our-plants-text p {
+        width: 420px;
+        font-size: 14px;
+    }
+
+    .trusted-seller {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trusted-badge {
+        display: none;
+    }
+
+    .badge {
+        width: auto;
+        position: relative;
+    }
+
+    .badge img {
+        width: 100%;
+    }
+
+    .trusted-seller-text h1 {
+        font-size: 24px;
+    }
+
+    .trusted-seller-text ul {
+        font-size: 14px;
+        margin-left: 20px;
+    }
+
+    .latest-deals-text h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+
+    }
+
+    .latest-deals-text p {
+        width: 420px;
+        font-size: 14px;
+    }
+
+    .image-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .large-card {
+        height: 200px;
+    }
+
+    .text-content #bloom,
+    #ana,
+    #zabo {
+        margin: 0 0 10px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Noto Serif', serif;
+    }
+
+    .subscription-form img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .form-content h1 {
+
+        font-size: 20px;
+    }
+
+    .subscribe-container {
+        display: flex;
+        width: 100%;
+        min-width: 400px;
+        margin: 20px auto;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .links {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 36px;
+    }
+
+    .footer-logo p {
+        font-size: 16px;
+    }
+
 }
